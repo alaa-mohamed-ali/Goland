@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-type vertex struct {
+type Vertex struct {
 	X int
 	Y int
 }
