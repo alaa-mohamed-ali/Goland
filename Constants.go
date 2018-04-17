@@ -1,22 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-const Pi = 3.14
+const s = "constant"
 
 func main() {
-	const World = "alaa mohamed ali"
-	fmt.Println("Hello", World)
-	fmt.Println("Happy", Pi, "Day")
+	fmt.Println(s) //constant
 
-	const Truth = true
-	fmt.Println("Go rules?", Truth)
-	/*
-		Hello alaa mohamed ali
-		Happy 3.14 Day
-		Go rules? true
-	*/
+	const n = 500000000
+	const d = 3e20 / n
+	fmt.Println(d) //6e+11
 
-	fmt.Println(Pi, World, Truth)
-	//3.14 alaa mohamed ali true
+	fmt.Println(int64(d)) //600000000000
+
+	fmt.Println(math.Sin(n)) //-0.28470407323754404
+
 }
